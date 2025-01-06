@@ -1,5 +1,5 @@
 import React from 'react'
-import { FacebookIcon, InstagramIcon, LinkedinIcon } from '../utils/Icons'
+import { FacebookIcon, InstagramIcon, LinkedinIcon } from '../utils/icons'
 import { FOOTER_LIST } from '../utils/helper'
 
 const Footer = () => {
@@ -21,7 +21,7 @@ const Footer = () => {
                         {FOOTER_LIST.map((obj, i) => (
                             <a
                                 key={i}
-                                className='max-sm:text-sm max-sm:leading-4 text-white hover:text-dark-blue transition-all duration-300 opacity-70 cursor-pointer max-sm:text-center'
+                                className='max-sm:text-sm max-sm:leading-4 text-white hover:text-blue-500 transition-all duration-300 opacity-70 cursor-pointer max-sm:text-center'
                                 href={obj.link}
                             >
                                 {obj.title}
@@ -33,33 +33,33 @@ const Footer = () => {
                             Send Us An E-mail
                         </p>
                         <a
-                            className='text-white leading-6 max-sm:leading-4 opacity-70 cursor-pointer hover:text-dark-blue transition-all duration-300 max-sm:text-center'
+                            className='text-white leading-6 max-sm:leading-4 opacity-70 cursor-pointer hover:text-blue-500 transition-all duration-300 max-sm:text-center'
                             href='mailto:info@echoai.ai'
                         >
                             info@echoai.ai
                         </a>
                         <p className='text-white leading-5 max-sm:leading-4 max-sm:text-sm pt-8 max-sm:text-center'>
-                            Send Us An E-mail
+                            Follow Us On
                         </p>
                         <div className='flex items-center gap-3 pt-[18px]'>
                             <a
                                 href='https://www.linkedin.com/feed/'
                                 target='_blank'
-                                className='hover:scale-110 transition-all duration-300'
+                                className='hover:scale-110 transition-all duration-300 size-10 rounded-full bg-circle-gradient flex justify-center items-center'
                             >
                                 <LinkedinIcon />
                             </a>
                             <a
                                 href='https://www.instagram.com/'
-                                target='_blank'
-                                className='hover:scale-110 transition-all duration-300'
+                                target='_blank' 
+                                className='hover:scale-110 transition-all duration-300 size-10 rounded-full bg-circle-gradient flex justify-center items-center'
                             >
                                 <InstagramIcon />
                             </a>
                             <a
                                 href='www.facebook.com'
                                 target='_blank'
-                                className='hover:scale-110 transition-all duration-300'
+                                className='hover:scale-110 transition-all duration-300 size-10 rounded-full bg-circle-gradient flex justify-center items-center'
                             >
                                 <FacebookIcon />
                             </a>

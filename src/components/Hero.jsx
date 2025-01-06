@@ -4,7 +4,7 @@ import CustomButton from '../common/CustomButton'
 
 const Hero = () => {
   return (
-      <div className='bg-hero bg-cover bg-no-repeat bg-center lg:h-[840.23px] relative'>
+      <div className='bg-hero bg-cover lg:bg-[100%100%] bg-no-repeat bg-center lg:h-[840.23px] relative'>
           <Header/>
           <div className='container relative'>
               <div className='flex lg:flex-row flex-col gap-5 max-xl:pt-12'>
