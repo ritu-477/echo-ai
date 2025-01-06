@@ -1,6 +1,5 @@
 import React from 'react'
-import { FacebookIcon, InstagramIcon, LinkedinIcon } from '../utils/icons'
-import { FOOTER_LIST } from '../utils/helper'
+import { FOOTER_LIST,SOCIAL_LINKS } from '../utils/helper'
 
 const Footer = () => {
     const currentYear = new Date().getFullYear()
@@ -21,7 +20,7 @@ const Footer = () => {
                         {FOOTER_LIST.map((obj, i) => (
                             <a
                                 key={i}
-                                className='max-sm:text-sm max-sm:leading-4 text-white hover:text-blue-500 transition-all duration-300 opacity-70 cursor-pointer max-sm:text-center'
+                                className='max-sm:text-sm max-sm:leading-4 text-white hover:text-blue transition-all duration-300 opacity-70 cursor-pointer max-sm:text-center'
                                 href={obj.link}
                             >
                                 {obj.title}
@@ -33,7 +32,7 @@ const Footer = () => {
                             Send Us An E-mail
                         </p>
                         <a
-                            className='text-white leading-6 max-sm:leading-4 opacity-70 cursor-pointer hover:text-blue-500 transition-all duration-300 max-sm:text-center'
+                            className='text-white leading-6 max-sm:leading-4 opacity-70 cursor-pointer hover:text-blue transition-all duration-300 max-sm:text-center'
                             href='mailto:info@echoai.ai'
                         >
                             info@echoai.ai
@@ -42,34 +41,23 @@ const Footer = () => {
                             Follow Us On
                         </p>
                         <div className='flex items-center gap-3 pt-[18px]'>
-                            <a
-                                href='https://www.linkedin.com/feed/'
-                                target='_blank'
-                                className='hover:scale-110 transition-all duration-300 size-10 rounded-full bg-circle-gradient flex justify-center items-center'
-                            >
-                                <LinkedinIcon />
-                            </a>
-                            <a
-                                href='https://www.instagram.com/'
-                                target='_blank' 
-                                className='hover:scale-110 transition-all duration-300 size-10 rounded-full bg-circle-gradient flex justify-center items-center'
-                            >
-                                <InstagramIcon />
-                            </a>
-                            <a
-                                href='www.facebook.com'
-                                target='_blank'
-                                className='hover:scale-110 transition-all duration-300 size-10 rounded-full bg-circle-gradient flex justify-center items-center'
-                            >
-                                <FacebookIcon />
-                            </a>
+                            {SOCIAL_LINKS.map((obj, index) => (
+                                <a
+                                    key={index}
+                                    href={obj.href}
+                                    target='_blank'
+                                    className='hover:scale-110 transition-all duration-300 size-10 rounded-full bg-circle-gradient flex justify-center items-center'
+                                >
+                                    {obj.icon}
+                                </a>
+                            ))}
                         </div>
                     </div>
                 </div>
                 <div className='pb-[30px] pt-[60px] max-sm:pt-10'>
                     <div className='h-0.5 bottom-line w-full'></div>
                     <p className='text-white opacity-80 text-center max-sm:text-sm pt-5'>
-                        Copyright ECHO AI Â© {currentYear} | All Rights Reserved
+                        Copyright ECHO AI © {currentYear} | All Rights Reserved
                     </p>
                 </div>
             </div>

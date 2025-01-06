@@ -1,3 +1,5 @@
+import { FacebookIcon, InstagramIcon, LinkedinIcon } from '../utils/icons'
+
 export const NAV_DATA_LINK = [
     { data: 'About us', href: '#about' },
     { data: 'Solutions', href: '#solution' },
@@ -111,3 +113,18 @@ export const FOOTER_LIST = [
         link: "#faq",
     },
 ]
+
+export const SOCIAL_LINKS = [
+    {
+        href: 'https://www.linkedin.com/feed/',
+        icon: <LinkedinIcon />,
+    },
+    {
+        href: 'https://www.instagram.com/',
+        icon: <InstagramIcon />,
+    },
+    {
+        href: 'www.facebook.com',
+        icon: <FacebookIcon />,
+    },
+];
