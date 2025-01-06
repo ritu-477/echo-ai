@@ -20,7 +20,8 @@ module.exports = {
         'rich-black': "#01000B",
         'light-purple': "#BF97FF3D",
         'blue': "#3A3EF5",
-        'sky-blue': "#32C8F1",  
+        'sky-blue': "#32C8F1",
+        'light-blue':"#34A4F2"
       },
 
       fontSize: {

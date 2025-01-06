@@ -20,7 +20,7 @@ const Footer = () => {
                         {FOOTER_LIST.map((obj, i) => (
                             <a
                                 key={i}
-                                className='max-sm:text-sm max-sm:leading-4 text-white hover:text-blue transition-all duration-300 opacity-70 cursor-pointer max-sm:text-center'
+                                className='max-sm:text-sm max-sm:leading-4 text-white hover:text-light-blue transition-all duration-300 opacity-70 cursor-pointer max-sm:text-center'
                                 href={obj.link}
                             >
                                 {obj.title}
@@ -32,7 +32,7 @@ const Footer = () => {
                             Send Us An E-mail
                         </p>
                         <a
-                            className='text-white leading-6 max-sm:leading-4 opacity-70 cursor-pointer hover:text-blue transition-all duration-300 max-sm:text-center'
+                            className='text-white leading-6 max-sm:leading-4 opacity-70 cursor-pointer hover:text-light-blue transition-all duration-300 max-sm:text-center'
                             href='mailto:info@echoai.ai'
                         >
                             info@echoai.ai
