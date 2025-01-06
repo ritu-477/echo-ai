@@ -8,7 +8,7 @@ import Heading from "../common/Heading";
 
 const Testimonials = () => {
     return (
-        <div className="bg-off-black pb-28">
+        <div className="bg-rich-black pb-28" id="testimonials">
             <div className="container">
                 <Heading classStyle={'text-center pb-10'} text={'Testimonials'} />
                 <Swiper

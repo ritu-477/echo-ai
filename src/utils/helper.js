@@ -5,7 +5,7 @@ export const NAV_DATA_LINK = [
     { data: 'Solutions', href: '#solution' },
     { data: 'Benefits', href: '#benefits' },
     { data: 'Testimonials', href: '#testimonials' },
-    { data: 'FAQs', href: '#faqs' },
+    { data: 'FAQs', href: '#faq' },
 
 ];
 

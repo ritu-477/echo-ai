@@ -25,7 +25,7 @@ const BusinessCounter = () => {
     };
 
     return (
-        <div className="text-white lg:pt-14 md:pt-12 pt-10  lg:pb-[175px] md:pb-12 pb-10 relative">
+        <div className="text-white lg:pt-14 md:pt-12 pt-10  lg:pb-[175px] md:pb-12 pb-10 relative" id="solution">
             <div className="container mx-auto px-4 relative z-10">
                 <div className="gap-8 text-center flex max-md:flex-wrap items-center justify-center">
                     {BUSINESS_DATA.map(({ id, number, prefix = "", unit = "", description }, index) => (

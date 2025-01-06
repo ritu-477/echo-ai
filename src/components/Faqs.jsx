@@ -9,7 +9,7 @@ const Faqs = () => {
         setOpenAccordion(openAccordion === index ? null : index);
     };
     return (
-        <div className="bg-rich-black pb-[178px] pt-[105px]">
+        <div className="bg-rich-black pb-[178px] pt-[105px]" id='faq'>
             <div className="container">
                 <Heading  classStyle={'text-center'} text="FAQs"/>
                 <div className="pt-[60px]">
