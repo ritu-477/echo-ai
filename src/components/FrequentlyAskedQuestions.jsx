@@ -12,7 +12,7 @@ const FrequentlyAskedQuestions = () => {
         <div className="bg-rich-black xl:pb-[183px] md:py-14 lg:py-20 xl:pt-[105px] max-sm:py-6" id='faq'>
             <div className="container">
                 <Heading  classStyle={'text-center'} text="FAQs"/>
-                <div className="pt-[60px]">
+                <div className="lg:pt-[60px] pt-10">
                     {
                         ACCORDION_ITEMS_LIST.map((item, index) => (
                             <div key={index} className="max-w-[1022px] mx-auto">
@@ -41,7 +41,7 @@ const FrequentlyAskedQuestions = () => {
                                             : "max-h-0 opacity-0"
                                             }`}>
                                         <div className="transition-all duration-700 ease-in-out">
-                                            {item.description && <p className="text-white font-normal text-base leading-7 px-4 sm:px-6 pb-6 max-w-[990px]">{item.description}</p>}
+                                            {item.description && <p className="text-white font-normal text-base leading-7 px-4 sm:px-6 pb-6 sn:max-w-[990px] w-full">{item.description}</p>}
                                         </div>
                                     </div>
                                 </div>
