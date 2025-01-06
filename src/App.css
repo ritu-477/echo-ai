@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body{
+  font-family: 'outfit', "sans serif";
+}
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+}
+
+.bottom-line {
+  background-image: linear-gradient(90deg, transparent, #fff, transparent);
+  opacity: 80%;
+}
+
+@media(min-width:768px) {
+  .border-gradient {
+    position: relative;
+  }
+
+  .border-gradient::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 1px;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+}
