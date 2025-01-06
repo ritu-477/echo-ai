@@ -5,14 +5,14 @@ const Footer = () => {
     const currentYear = new Date().getFullYear()
 
     return (
-        <div className='bg-navy-blue pt-[356px] max-xl:pt-[300px] max-lg:pt-[60px]' id='benefits'>
-            <div className='max-w-[1172px] px-4 mx-auto'>
+        <div className='xl:pt-[182px] lg:pt-20 md:pt-14 pt-6' id='benefits'>
+            <div className='container'>
                 <div className='flex justify-between max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:gap-10'>
-                    <a href='#footerlogo'>
+                    <a href='#footer-logo'>
                         <img
                             src="/assets/images/webp/footer-logo.webp"
                             alt='footer-Logo'
-                            className='max-w-[150px] pointer-events-none'
+                            className='sm:max-w-[150px] max-w-[100px] pointer-events-none'
                         />
                     </a>
                     <div className='flex flex-col gap-[14px]'>
@@ -28,7 +28,7 @@ const Footer = () => {
                         ))}
                     </div>
                     <div className='flex flex-col'>
-                        <p className='text-white leading-5 max-sm:leading-4 pb-3 text-whit max-sm:text-sm max-sm:text-center'>
+                              <p className='text-white leading-5 max-sm:leading-4 pb-3 text-whit max-sm:text-sm max-sm:text-center'>
                             Send Us An E-mail
                         </p>
                         <a

@@ -8,7 +8,6 @@ const BusinessCounter = () => {
         useEffect(() => {
             let startTimestamp = null;
             const duration = 2000;
-
             const step = (timestamp) => {
                 if (!startTimestamp) startTimestamp = timestamp;
                 const progress = Math.min((timestamp - startTimestamp) / duration, 1);
@@ -25,7 +24,7 @@ const BusinessCounter = () => {
     };
 
     return (
-        <div className="text-white lg:pt-14 md:pt-12 pt-10  lg:pb-[175px] md:pb-12 pb-10 relative" id="solution">
+        <div className="text-white lg:pt-14 pt-12  xl:pb-[87px] md:py-14 py-6 relative" id="solution">
             <div className="container mx-auto px-4 relative z-10">
                 <div className="gap-8 text-center flex max-md:flex-wrap items-center justify-center">
                     {BUSINESS_DATA.map(({ id, number, prefix = "", unit = "", description }, index) => (
@@ -34,7 +33,7 @@ const BusinessCounter = () => {
                             className={`lg:w-[41%] w-full px-3 flex flex-col justify-center items-center max-lg:mb-6 ${index !== BUSINESS_DATA.length - 1 ? "border-gradient" : ""
                                 }`}
                         >
-                            <div className="flex items-center justify-center lg:text-5xl text-3xl font-semibold">
+                            <div className="flex items-center justify-center lg:text-5xl text-2xl font-semibold">
                                 {prefix && <span className="lg:text-5xl lg:leading-custom-5xl text-3xl">{prefix}</span>}
                                 {index < 3 ? (
                                     <AnimateCount start={0} end={number} />

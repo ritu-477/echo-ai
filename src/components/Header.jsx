@@ -30,11 +30,11 @@ const Header = () => {
     }, [isMenuOpen])
 
     return (
-        <div className="sm:py-7 py-4 flex items-center lg:h-[100px] sm:h-20 bg-rich-black">
+        <div className="sm:py-7 py-4 flex items-center lg:h-[100px] sm:h-20">
             <div className="container">
                 <div className="flex justify-between items-center lg:h-[100px] sm:h-20">
                         <a href="/">
-                        <img className='lg:max-w-[192px] max-w-[120px]' src="/assets/images/webp/nav-logo.webp" alt="nav-logo" />
+                        <img className='lg:max-w-[192px] max-w-[120px] pointer-events-none' src="/assets/images/webp/nav-logo.webp" alt="nav-logo" />
                         </a>
                         <div className='lg:block hidden'>
                             <div className="flex gap-8 items-center">
@@ -55,14 +55,14 @@ const Header = () => {
                     >
                         {isMenuOpen ? (
                             <>
-                                <span className="h-[4px] absolute top-3 w-full bg-white transform rotate-45 transition duration-300"></span>
-                                <span className="h-[4px] absolute top-3 w-full bg-white transform -rotate-45 transition duration-300"></span>
+                                <span className="h-[3px] absolute top-3 w-full bg-white transform rotate-45 transition duration-300"></span>
+                                <span className="h-[3px] absolute top-3 w-full bg-white transform -rotate-45 transition duration-300"></span>
                             </>
                         ) : (
                             <>
-                                <span className="h-[4px] w-full bg-white"></span>
-                                <span className="h-[4px] w-full bg-white"></span>
-                                <span className="h-[4px] w-full bg-white"></span>
+                                <span className="h-[3px] w-full bg-white"></span>
+                                <span className="h-[3px] w-full bg-white"></span>
+                                <span className="h-[3px] w-full bg-white"></span>
                             </>
                         )}
                     </div>

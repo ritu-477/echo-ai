@@ -7,7 +7,7 @@ const Hero = () => {
       <div className='bg-hero bg-cover lg:bg-[100%100%] bg-no-repeat bg-center lg:h-[840.23px] relative' id='about'>
           <Header/>
           <div className='container relative'>
-              <div className='flex lg:flex-row flex-col gap-5 max-xl:pt-12'>
+              <div className='flex lg:flex-row flex-col gap-5 max-sm:pt-8 max-xl:pt-12'>
                   <div className='lg:w-[705px] w-full flex flex-col justify-center items-center xl:pt-[166px] xl:pb-[250.23px]'>
                       <h1 className='xl:text-7xl xl:leading-custom-6xl text-white text-center lg:text-6xl md:text-5xl text-3xl font-bold'>Innovate, Automate, Accelerate </h1>
                       <p className='sm:text-xl sm:leading-custom-3xl text-base font-normal text-center text-white sm:pt-6 pt-5'>Next Gen AI Automation to Scale Your Business.</p>
@@ -21,8 +21,8 @@ const Hero = () => {
                   </div>
                  </div>
           </div>
-          <div className='absolute left-0 bottom-0'>
-              <img className='w-full max-w-[163px]' src="/assets/images/webp/hero-circle-ellipse.webp" alt="circle" />
+          <div className='absolute left-0 lg:bottom-[-85px] xl:-[-180px] lg:block hidden'>
+              <img className='w-full max-w-[322px]' src="/assets/images/webp/hero-circle-ellipse.webp" alt="circle" />
           </div>
     </div>
   )

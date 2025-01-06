@@ -8,7 +8,7 @@ import Heading from "../common/Heading";
 
 const Testimonials = () => {
     return (
-        <div className="bg-rich-black pb-28" id="testimonials">
+        <div className="bg-rich-black xl:pb-[105px] lg:py-20 md:py-14 py-6 xl:pt-[88px]" id="testimonials">
             <div className="container">
                 <Heading classStyle={'text-center pb-10'} text={'Testimonials'} />
                 <Swiper
@@ -46,11 +46,16 @@ const Testimonials = () => {
                 >
                     {TESTIMONIAL_SLIDER.map((testimonial, index) => (
                         <SwiperSlide key={index}>
-                            <div className="bg-custom-gradient p-6 pb-14 rounded-lg text-white shadow-lg">
-                                <h3 className="text-2xl font-medium mb-4">
+                            <div className="bg-custom-gradient px-6 pt-6 rounded-3xl text-white shadow-lg max-lg:mb-14 xl:h-[289px]">
+                                <h3 className="sm:text-2xl text-xl leading-7 font-medium pb-2">
                                     {testimonial.title}
                                 </h3>
-                                <p className="text-sm sm:text-base font-normal lg:mb-12 mb-6 opacity-80">{testimonial.description}</p>
+                                <p
+                                    className={`text-sm sm:text-base max-w-[316px] font-normal ${index === 2 || index === 2 ? "lg:pb-6 pb-4 max-w-[270px]" : "lg:pb-12 pb-6"
+                                        } opacity-80`}
+                                >
+                                    {testimonial.description}
+                                </p>
                                 <div className="flex items-center gap-4">
                                     <img
                                         src={testimonial.image}
@@ -58,8 +63,8 @@ const Testimonials = () => {
                                         className="w-12 h-12 rounded-full"
                                     />
                                     <div>
-                                        <p className="font-medium">{testimonial.name}</p>
-                                        <p className="text-sm font-normal">{testimonial.role}</p>
+                                        <p className="font-medium text-xl sm:text-2xl leading-7">{testimonial.name}</p>
+                                        <p className="text-base font-normal">{testimonial.role}</p>
                                     </div>
                                 </div>
                             </div>
