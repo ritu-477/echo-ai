@@ -46,7 +46,7 @@ const Testimonials = () => {
                 >
                     {TESTIMONIAL_SLIDER.map((testimonial, index) => (
                         <SwiperSlide key={index}>
-                            <div className="bg-custom-gradient px-6 pt-6 rounded-3xl text-white shadow-lg max-lg:mb-14 xl:h-[289px]">
+                            <div className="bg-custom-gradient px-6 pt-6 rounded-3xl text-white shadow-lg mb-14 xl:h-[289px]">
                                 <h3 className="sm:text-2xl text-xl leading-7 font-medium pb-2">
                                     {testimonial.title}
                                 </h3>
