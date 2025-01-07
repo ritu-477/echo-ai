@@ -4,6 +4,11 @@ body {
   font-family: 'outfit', "sans serif";
 }
 
+html,
+body {
+  scroll-behavior: smooth !important;
+}
+
 .swiper-pagination-bullet {
   background-color: white !important;
 }
