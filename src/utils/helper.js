@@ -11,7 +11,6 @@ export const NAV_DATA_LINK = [
 
 export const BUSINESS_DATA = [
     {
-        id: 1,
         prefix: "",
         number: 99,
         unit: "%",
@@ -19,7 +18,6 @@ export const BUSINESS_DATA = [
     },
 
     {
-        id: 2,
         number: 15,
         prefix: "$",
         unit: "T",
@@ -27,7 +25,6 @@ export const BUSINESS_DATA = [
     },
     
     {
-        id: 3,
         prefix: "",
         number: 3.5,
         unit: "X",

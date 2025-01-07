@@ -27,9 +27,9 @@ const BusinessCounter = () => {
         <div className="text-white lg:pt-14 pt-12  xl:pb-[87px] md:py-14 py-6 relative" id="solution">
             <div className="container mx-auto px-4 relative z-10">
                 <div className="gap-8 text-center flex max-md:flex-wrap items-center justify-center">
-                    {BUSINESS_DATA.map(({ id, number, prefix = "", unit = "", description }, index) => (
+                    {BUSINESS_DATA.map(({ number, prefix = "", unit = "", description }, index) => (
                         <div
-                            key={id}
+                            key={index}
                             className={`lg:w-[41%] w-full px-3 flex flex-col justify-center items-center max-lg:mb-6 ${index !== BUSINESS_DATA.length - 1 ? "border-gradient" : ""
                                 }`}
                         >
