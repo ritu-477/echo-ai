@@ -40,9 +40,7 @@ const FrequentlyAskedQuestions = () => {
                                             ? "opacity-100"
                                             : "max-h-0 opacity-0"
                                             }`}>
-                                        <div className="transition-all duration-700 ease-in-out">
-                                            {item.description && <p className="text-white font-normal text-sm sm:text-base leading-7 px-4 sm:px-6 pb-6 sn:max-w-[990px] w-full">{item.description}</p>}
-                                        </div>
+                                           <p className="text-white font-normal text-sm sm:text-base leading-7 px-4 sm:px-6 pb-6 sm:max-w-[990px] w-full max-sm:overflow-y-auto">{item.description}</p>
                                     </div>
                                 </div>
                             </div>

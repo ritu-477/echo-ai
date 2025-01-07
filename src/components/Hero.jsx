@@ -14,10 +14,10 @@ const Hero = () => {
                       <CustomButton text={'Book A Call Now!'} classStyle={'sm:py-[19.5px] sm:px-[38.5px] py-4 px-7 sm:mt-6 mt-5'} />
                   </div>
                   <div className='absolute right-[-57px] top-[60px] xl:block hidden'>
-                      <img className='max-w-[470px] h-[559px] w-full pointer-events-none' src="/assets/images/webp/hero-image.webp" alt="hero-image" />
+                      <img className='max-w-[470px] h-[559px] w-full pointer-events-none animate-bounce duration-2000' src="/assets/images/webp/hero-image.webp" alt="hero-image" />
                   </div>
                   <div className='xl:hidden flex justify-center'>
-                      <img className='w-full max-w-[470px] pointer-events-none' src="/assets/images/webp/hero-image.webp" alt="hero-image" />
+                      <img className='w-full max-w-[470px] pointer-events-none animate-pulse duration-2000' src="/assets/images/webp/hero-image.webp" alt="hero-image" />
                   </div>
                  </div>
           </div>
