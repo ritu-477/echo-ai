@@ -24,7 +24,7 @@ const FrequentlyAskedQuestions = () => {
                                 >
                                     <button
                                         onClick={() => toggleAccordion(index)}
-                                        className={`font-medium text-xl leading-6 text-white flex justify-between items-center text-start p-4 sm:px-6 py-6 max-w-[1022px] w-full ${openAccordion === index ? "pb-4" : "pb-6"
+                                        className={`font-medium sm:text-xl leading-6 text-base text-white flex justify-between items-center text-start p-4 sm:px-6 py-6 max-w-[1022px] w-full ${openAccordion === index ? "pb-4" : "pb-6"
                                             }`}
                                     >
                                         {item.heading}
@@ -41,7 +41,7 @@ const FrequentlyAskedQuestions = () => {
                                             : "max-h-0 opacity-0"
                                             }`}>
                                         <div className="transition-all duration-700 ease-in-out">
-                                            {item.description && <p className="text-white font-normal text-base leading-7 px-4 sm:px-6 pb-6 sn:max-w-[990px] w-full">{item.description}</p>}
+                                            {item.description && <p className="text-white font-normal text-sm sm:text-base leading-7 px-4 sm:px-6 pb-6 sn:max-w-[990px] w-full">{item.description}</p>}
                                         </div>
                                     </div>
                                 </div>
