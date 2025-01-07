@@ -21,7 +21,7 @@ const Footer = () => {
                             {FOOTER_LIST.map((obj, i) => (
                                 <a
                                     key={i}
-                                    className='max-sm:text-sm max-sm:leading-4 text-white hover:text-light-blue transition-all duration-300 opacity-70 cursor-pointer max-sm:text-center'
+                                    className='max-sm:text-sm max-sm:leading-4 text-white hover:text-light-blue transition-all duration-300 opacity-70 cursor-pointer'
                                     href={obj.link}
                                 >
                                     {obj.title}
@@ -29,16 +29,16 @@ const Footer = () => {
                             ))}
                         </div>
                         <div className='flex flex-col max-sm:w-[50%'>
-                            <p className='text-white leading-5 max-sm:leading-4 pb-3 text-whit max-sm:text-sm max-sm:text-center'>
+                            <p className='text-white leading-5 max-sm:leading-4 pb-3 text-whit max-sm:text-sm'>
                                 Send Us An E-mail
                             </p>
                             <a
-                                className='text-white leading-6 max-sm:leading-4 opacity-70 cursor-pointer hover:text-light-blue transition-all duration-300 max-sm:text-center'
+                                className='text-white leading-6 max-sm:leading-4 opacity-70 cursor-pointer hover:text-light-blue transition-all duration-300'
                                 href='mailto:info@echoai.ai'
                             >
                                 info@echoai.ai
                             </a>
-                            <p className='text-white leading-5 max-sm:leading-4 max-sm:text-sm pt-8 max-sm:text-center'>
+                            <p className='text-white leading-5 max-sm:leading-4 max-sm:text-sm pt-8'>
                                 Follow Us On
                             </p>
                             <div className='flex items-center gap-3 pt-[18px]'>
