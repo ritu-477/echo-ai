@@ -17,7 +17,7 @@ const Hero = () => {
                       <img className='max-w-[470px] h-[559px] w-full pointer-events-none animate-bounce duration-2000' src="/assets/images/webp/hero-image.webp" alt="hero-image" />
                   </div>
                   <div className='xl:hidden flex justify-center'>
-                      <img className='w-full max-w-[470px] pointer-events-none animate-pulse duration-2000' src="/assets/images/webp/hero-image.webp" alt="hero-image" />
+                      <img className='w-full max-w-[470px] pointer-events-none' src="/assets/images/webp/hero-image.webp" alt="hero-image" />
                   </div>
                  </div>
           </div>

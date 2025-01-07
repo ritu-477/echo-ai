@@ -11,7 +11,7 @@ const BusinessCounter = () => {
             const step = (timestamp) => {
                 if (!startTimestamp) startTimestamp = timestamp;
                 const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-                setValue((progress * (end - start) + start).toFixed(1));
+                setValue(progress * (end - start) + start);
                 if (progress < 1) {
                     window.requestAnimationFrame(step);
                 }
@@ -20,7 +20,8 @@ const BusinessCounter = () => {
             window.requestAnimationFrame(step);
         }, [end, start]);
 
-        return <span>{value}</span>;
+        return <span>{Number(value).toFixed(value % 1 === 0 ? 0 : 1)}</span>;
+        
     };
 
     return (
@@ -42,7 +43,9 @@ const BusinessCounter = () => {
                                 )}
                                 {unit && <span className="lg:text-5xl text-2xl">{unit}</span>}
                             </div>
-                            <p className="sm:text-base text-sm text-white font-normal pt-2 md:max-w-[187px]">{description}</p>
+                            <p className="sm:text-base text-sm text-white font-normal pt-2 md:max-w-[187px]">
+                                {description}
+                            </p>
                         </div>
                     ))}
                 </div>
