@@ -34,13 +34,13 @@ const BusinessCounter = () => {
                                 }`}
                         >
                             <div className="flex items-center justify-center lg:text-5xl text-2xl font-semibold">
-                                {prefix && <span className="lg:text-5xl lg:leading-custom-5xl text-3xl">{prefix}</span>}
+                                {prefix && <span className="lg:text-5xl lg:leading-custom-5xl text-2xl">{prefix}</span>}
                                 {index < 3 ? (
                                     <AnimateCount start={0} end={number} />
                                 ) : (
                                     <span>{number}</span>
                                 )}
-                                {unit && <span className="lg:text-5xl text-3xl">{unit}</span>}
+                                {unit && <span className="lg:text-5xl text-2xl">{unit}</span>}
                             </div>
                             <p className="sm:text-base text-sm text-white font-normal pt-2 md:max-w-[187px]">{description}</p>
                         </div>
