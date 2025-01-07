@@ -11,6 +11,8 @@ body {
 
 .swiper-pagination-bullet {
   background-color: white !important;
+  width: 16px !important;
+  height: 16px !important;
 }
 
 .bottom-line {

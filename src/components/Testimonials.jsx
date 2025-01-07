@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import { TESTIMONIAL_SLIDER } from "../utils/helper";
 import Heading from "../common/Heading";
 
@@ -14,35 +14,24 @@ const Testimonials = () => {
                 <Swiper
                     slidesPerView={1}
                     spaceBetween={20}
-                    loop={true}
-                    autoplay={{
-                        delay: 3000,
-                        disableOnInteraction: false,
-                    }}
-                    breakpoints={{
-                        640: {
-                            slidesPerView: 1,
-                            pagination: {
-                                clickable: true,
-                            },
-                        },
-                        768: {
-                            slidesPerView: 2,
-                            pagination: {
-                                clickable: true,
-                            },
-                        },
-                        1024: {
-                            slidesPerView: 3,
-                            pagination: false,
-                        },
-                    }}
-                    modules={[Autoplay, Pagination]}
-                    className="mySwiper"
                     pagination={{
                         clickable: true,
                         dynamicBullets: true,
                     }}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 1,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            pagination:"false"
+                        },
+                    }}
+                    modules={[Pagination]}
+                    className="mySwiper"
                 >
                     {TESTIMONIAL_SLIDER.map((testimonial, index) => (
                         <SwiperSlide key={index}>
@@ -51,7 +40,7 @@ const Testimonials = () => {
                                     {testimonial.title}
                                 </h3>
                                 <p
-                                    className={`text-sm sm:text-base max-w-[316px] font-normal ${index === 2 || index === 2 ? "lg:pb-6 pb-4 max-w-[270px]" : "lg:pb-12 pb-6"
+                                    className={`text-sm sm:text-base max-w-[316px] font-normal ${index === 2 ? "lg:pb-6 pb-4 max-w-[270px]" : "lg:pb-12 pb-6"
                                         } opacity-80`}
                                 >
                                     {testimonial.description}

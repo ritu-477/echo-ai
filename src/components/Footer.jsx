@@ -8,7 +8,7 @@ const Footer = () => {
         <div className='xl:pt-[182px] lg:pt-20 md:pt-14 pt-6' id='benefits'>
             <div className='container'>
                 <div className='flex justify-between max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:gap-10'>
-                    <a href='#footer-logo'>
+                    <a href='/'>
                         <img
                             src="/assets/images/webp/footer-logo.webp"
                             alt='footer-Logo'
