@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Heading from '../common/Heading';
 import { ACCORDION_ITEMS_LIST } from '../utils/helper'
 
-const FrequentlyAskedQuestions = () => {
+const Faqs = () => {
     const [openAccordion, setOpenAccordion] = useState(0);
 
     const toggleAccordion = (index) => {
@@ -24,14 +24,14 @@ const FrequentlyAskedQuestions = () => {
                                 >
                                     <button
                                         onClick={() => toggleAccordion(index)}
-                                        className={`font-medium sm:text-xl leading-6 text-base text-white flex justify-between items-center text-start p-4 sm:px-6 py-6 max-w-[1022px] w-full ${openAccordion === index ? "pb-4" : "pb-6"
+                                        className={`font-medium sm:text-xl leading-6 text-base text-white flex justify-between items-center text-start p-4 sm:px-6 sm:py-6 max-w-[1022px] w-full ${openAccordion === index ? "pb-4" : "pb-6"
                                             }`}
                                     >
                                         {item.heading}
                                         <img
                                             src="/assets/images/svg/faq-svg.svg"
-                                            alt={openAccordion === index ? "Collapse" : "Expand"}
-                                            className={`w-[15px] h-[8.55px] ml-3 size-5 transition-transform duration-500 transform ${openAccordion === index ? "rotate-180" : "rotate-0"
+                                            alt={'arrow'}
+                                            className={`w-[15px] h-[8.55px] ml-3 transition-transform duration-500 transform ${openAccordion === index ? "rotate-180" : "rotate-0"
                                                 }`}
                                         />
                                     </button>
@@ -51,4 +51,4 @@ const FrequentlyAskedQuestions = () => {
     )
 }
 
-export default FrequentlyAskedQuestions
+export default Faqs

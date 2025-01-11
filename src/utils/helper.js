@@ -1,13 +1,13 @@
 import { FacebookIcon, InstagramIcon, LinkedinIcon } from '../utils/icons'
 
-export const NAV_DATA_LINK = [
-    { data: 'About us', href: '#about' },
-    { data: 'Solutions', href: '#solution' },
-    { data: 'Benefits', href: '#benefits' },
-    { data: 'Testimonials', href: '#testimonials' },
-    { data: 'FAQs', href: '#faq' },
+    export const NAV_DATA_LIST = [
+        { data: 'About us', link: '#about' },
+        { data: 'Solutions', link: '#solution' },
+        { data: 'Benefits', link: '#benefits' },
+        { data: 'Testimonials', link: '#testimonials' },
+        { data: 'FAQs', link: '#faq' },
 
-];
+    ];
 
 export const BUSINESS_DATA = [
     {
@@ -58,15 +58,6 @@ export const TESTIMONIAL_SLIDER = [
         name: "Mike Lotz,",
         role: "CEO (MREM)",
         image: "/assets/images/webp/ceo-image.webp",
-    },
-
-    {
-        title: "Game Changer!",
-        description:
-            "“The autonomous sales flow is effective, to say the least. I was able to replace full-time VA, cutting expense completely while maintaining efficiency standard high-performing results.”",
-        name: "Rachel Lettice,",
-        role: "Creative Director",
-        image: "/assets/images/webp/girl-image.webp",
     },
 ];
 
@@ -122,15 +113,15 @@ export const FOOTER_LIST = [
 
 export const SOCIAL_LINKS = [
     {
-        href: 'https://www.linkedin.com/feed/',
+        link: 'https://www.linkedin.com/feed/',
         icon: <LinkedinIcon />,
     },
     {
-        href: 'https://www.instagram.com/',
+        link: 'https://www.instagram.com/',
         icon: <InstagramIcon />,
     },
     {
-        href: 'www.facebook.com',
+        link: 'www.facebook.com',
         icon: <FacebookIcon />,
     },
 ];

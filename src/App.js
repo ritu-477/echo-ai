@@ -5,7 +5,7 @@ import BackToTop from './common/BackToTop';
 import BusinessCounter from './components/BusinessCounter';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
-import FrequentlyAskedQuestions from './components/FrequentlyAskedQuestions';
+import Faqs from './components/Faqs';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Hero />
       <BusinessCounter />
       <Testimonials />
-      <FrequentlyAskedQuestions/>
+      <Faqs/>
       <Footer/>
       <BackToTop/>
     </>

@@ -22,7 +22,7 @@ const BackToTop = () => {
             {isVisible && (
                 <button
                     onClick={scrollToTop}
-                    className="fixed bottom-5 right-5 z-30 bg-white p-2 w-12 border-blue-500 border rounded-lg flex justify-center">
+                    className="fixed bottom-5 right-5 z-30 bg-white p-2 sm:size-12 size-8 border-blue-500 border rounded-lg flex justify-center items-center">
                     <DoubleArrow/>
                 </button>
             )}

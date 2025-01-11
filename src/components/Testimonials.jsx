@@ -35,16 +35,18 @@ const Testimonials = () => {
                 >
                     {TESTIMONIAL_SLIDER.map((testimonial, index) => (
                         <SwiperSlide key={index}>
-                            <div className="bg-custom-gradient px-6 pt-6 rounded-3xl text-white shadow-lg mb-14 xl:h-[289px]">
-                                <h3 className="sm:text-2xl text-xl leading-7 font-medium pb-2">
-                                    {testimonial.title}
-                                </h3>
-                                <p
-                                    className={`text-sm sm:text-base max-w-[316px] font-normal ${index === 2 ? "lg:pb-6 pb-4 max-w-[270px]" : "lg:pb-12 pb-6"
-                                        } opacity-80`}
-                                >
-                                    {testimonial.description}
-                                </p>
+                            <div className="bg-custom-gradient px-6 pt-6 rounded-3xl text-white shadow-lg mb-14 h-60 sm:h-64 lg:h-[289px] flex flex-col !justify-between">
+                                <div className="flex flex-col">
+                                    <h3 className="sm:text-2xl text-xl leading-7 font-medium pb-2">
+                                        {testimonial.title}
+                                    </h3>
+                                    <p
+                                        className={`text-sm sm:text-base max-w-[316px] font-normal ${index === 2 ? "max-w-[270px]" : ""
+                                            } opacity-80`}
+                                    >
+                                        {testimonial.description}
+                                    </p>
+                               </div>
                                 <div className="flex items-center gap-4">
                                     <img
                                         src={testimonial.image}
@@ -52,7 +54,7 @@ const Testimonials = () => {
                                         className="w-12 h-12 rounded-full"
                                     />
                                     <div>
-                                        <p className="font-medium text-xl sm:text-2xl leading-7">{testimonial.name}</p>
+                                        <p className="font-medium text-xl leading-7">{testimonial.name}</p>
                                         <p className="text-base font-normal">{testimonial.role}</p>
                                     </div>
                                 </div>
